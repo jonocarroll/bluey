@@ -18,6 +18,7 @@ for ep in range(len(script_titles)):
   with open(os.path.join(dir, t.replace("/Script", '').replace("/Main", '')), 'w') as f:
       f.write(text['content'])
 
+
 ## episode listsings
 episode_list = episode_list['sections'][0]['content']
 with open('listing', 'w') as eplist:
