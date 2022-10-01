@@ -4,7 +4,7 @@ import os
 fandom.set_wiki("bluey")
 pages = fandom.search("/Script", results = 1000)
 len(pages)
-scripts = [x for x in scripts if x[0].endswith('Script')]
+scripts = [x for x in pages if x[0].endswith('Script')]
 len(scripts)
 script_titles = [x[0] for x in scripts]
 
