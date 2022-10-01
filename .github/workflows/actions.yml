@@ -30,8 +30,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute py script # run fandom.py
-        run: python fandom.py
+      - name: execute py script # run script
+        run: python get_scripts_fandom.py
           
       - name: commit files
         run: |
