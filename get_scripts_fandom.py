@@ -21,6 +21,8 @@ for ep in range(len(script_titles)):
 
 ## episode listings
 episode_list = fandom.page("Episode_list").content
-episode_list = episode_list['sections'][0]['content']
+# episode_list = episode_list['sections'][0]['content']
+episode_list = episode_list['content']
 with open('listing', 'w') as eplist:
     eplist.write(episode_list)
+
