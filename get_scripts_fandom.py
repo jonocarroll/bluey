@@ -13,11 +13,10 @@ for ep in range(len(script_titles)):
   t = script_titles[ep]
   try:
     text = fandom.page(t).content
+    with open(os.path.join(dir, t.replace("/Script", '').replace("/Main", '')), 'w') as f:
+        f.write(text['content'])
   except:
     pass
-  with open(os.path.join(dir, t.replace("/Script", '').replace("/Main", '')), 'w') as f:
-      f.write(text['content'])
-
 
 ## episode listings
 episode_list = fandom.page("Episode_List").content
