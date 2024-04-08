@@ -800,3 +800,94 @@ Episode yet to air
 Surprise!
 TBA
 Episode yet to air
+{
+ title: {
+ text: 'Viewership per Premier'
+ },
+ tooltip: {
+ trigger: 'axis'
+ },
+ legend: {},
+ toolbox: {
+ show: true,
+ feature: {
+ dataZoom: {
+ yAxisIndex: 'none'
+ },
+ dataView: { readOnly: false },
+ magicType: { type: },
+ restore: {},
+ saveAsImage: {}
+ }
+ },
+ xAxis: {
+ type: 'category',
+ boundaryGap: false,
+ data: 
+ },
+ yAxis: {
+ type: 'value',
+ axisLabel: {
+ formatter: '{value},000'
+ }
+ },
+ series: [
+ {
+ name: 'Season One',
+ type: 'line',
+ data: ,
+ markPoint: {
+ data: [
+ { type: 'max', name: 'Highest' },
+ { type: 'min', name: 'Lowest' }
+ ]
+ },
+ markLine: {
+ data: 
+ }
+ },
+ {
+ name: 'Season Two',
+ type: 'line',
+ data: ,
+ markPoint: {
+ data: [
+ { type: 'max', name: 'Highest' },
+ { type: 'min', name: 'Lowest' }
+ ]
+ },
+ markLine: {
+ data: 
+ }
+ },
+ {
+ name: 'Season Three',
+ type: 'line',
+ data: ,
+ markPoint: {
+ data: 
+ },
+ markLine: {
+ data: [
+ { type: 'average', name: 'Avg' },
+ [
+ {
+ symbol: 'none',
+ x: '90%',
+ yAxis: 'max'
+ },
+ {
+ symbol: 'circle',
+ label: {
+ position: 'start',
+ formatter: 'Max'
+ },
+ type: 'max',
+ name: 'Max'
+ }
+ ]
+ ]
+ }
+ }
+ ]
+}
