@@ -795,7 +795,7 @@ N/A
 49
 The Sign
 14 April 2024
-Episode yet to air
+1,917,000
 50
 50
 Surprise!
@@ -867,7 +867,10 @@ Episode yet to air
  type: 'line',
  data: ,
  markPoint: {
- data: 
+ data: [
+ { type: 'max', name: 'Highest' },
+ { type: 'min', name: 'Lowest' }
+ ]
  },
  markLine: {
  data: [
